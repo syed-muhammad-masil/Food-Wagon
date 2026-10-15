@@ -1,0 +1,182 @@
+:root{
+    --secondary-color:rgb(254, 202, 47);
+    --primary-color:rgb(255, 255, 255);
+    --b:black;
+}
+@font-face {
+    font-family:aura;
+    src: url(./assets/Poppins/Poppins-Regular.ttf);
+}
+@font-face {
+    font-family:auraplus;
+    src: url(./assets/Old_Standard_TT/OldStandardTT-Regular.ttf);
+}
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background-color:var(--secondary-color);
+}
+.container{
+    display:flex;
+    background-color:var(--primary-color);
+    justify-content:space-around;
+    height:10dvh;
+    font-family:aura;
+
+}
+.container img{
+    height: 10dvh;
+}
+.container input,button{
+    margin: 18px 0;
+}
+.container p{
+    margin: 20px;
+}
+.fa-user-tie,.fa-location-dot{
+    color:var(--secondary-color);
+}
+#search{
+    width:25dvh;
+    padding:5px;
+    font-family:aura;
+    padding-left:20px !important;
+    background-image:url(./assets/search-icon.svg);
+    background-repeat: no-repeat;
+    background-position:8px center;
+    background-size:15px;
+    border:none;
+    font-size:15px;
+    margin-right:5px;
+}
+#login{
+    padding:7px 35px;
+    font-family:aura;
+    width:25dvh;
+    font-size:15px;
+    border-radius:5px;
+    border:none;
+    cursor:pointer;
+    
+}
+#login i{
+    font-size:20px;
+    
+}
+#search:focus{
+    border:none;
+    outline:none;
+    border-radius:10px;
+}
+
+#search:hover{
+    transition:0.5s all ease;
+    background-color:rgb(234, 230, 230);
+    border-radius:10px;
+}
+#login:hover{
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+#login:active{
+    background-color:var(--secondary-color);
+    transition: all 0.5s ease;
+    transform: scale(1.01);
+   
+}
+#login:active .fa-solid{
+    transition: all 0.5s ease;
+    color:var(--primary-color);
+}
+#main{
+    font-family:aura;
+    color:var(--primary-color);
+    font-size:4rem;
+    margin-top:80px;
+    margin-left:120px;
+    margin-bottom:0;
+}
+#maint{
+    color:var(--b);
+    font-size:20px;
+    margin-top:80px;
+    margin-left:120px;
+    font-family:auraplus;
+    margin-top:0;
+}
+#herosection{
+    display:flex;
+    gap:30px;
+    padding:30px;
+    flex-direction:row;
+    justify-content: space-between;
+    align-content:center;
+}
+#noodle{
+    width:450px;
+}
+#card{
+    background-color:var(--primary-color);
+    border-radius:10px;
+    margin-top:40px;
+    margin-left:120px;
+}
+#pickup{
+    margin-left: 2px !important;
+}
+#delivery,#pickup{
+    margin:20px;
+    padding:8px 39px;
+    border:none;
+    background-color:var(--primary-color);
+    cursor: pointer;
+    font-family:aura;
+    color:rgb(59, 56, 56);
+    font-size: medium;
+}
+
+#delivery:hover,#pickup:hover{
+    transition: all 0.5s ease;
+    background-color:rgba(255, 158, 128, 0.172) ;
+    color: rgb(247, 82, 32);
+    border-radius:8px;
+}
+#menusearch{
+    width:64dvh;
+    padding:8px;
+    margin-left:18px;
+    margin-right:8px;
+    font-family:aura;
+    border-radius:5px;
+    border:none;
+    background-color:rgb(244, 242, 242);
+}
+#find{
+    width:18dvh;
+    padding:14px;
+    font-family:aura;
+    border-radius:5px;
+    background-color:rgb(255, 96, 96);
+    border:none;
+    color:var(--primary-color);
+    cursor:pointer;
+}
+#hr{
+    color:rgb(234, 228, 228);
+}
+#find:hover{
+    transition: all 0.5s ease;
+    color:rgb(251, 79, 79);
+    background-color:rgb(232, 224, 224);
+}
+#menusearch:focus{
+    outline: none;
+    border:none;
+    background-color:rgb(244, 242, 242);
+    background-image:url(./assets/location-icon.svg);
+}
