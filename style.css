@@ -2,13 +2,15 @@
     --secondary-color:rgb(254, 202, 47);
     --primary-color:rgb(255, 255, 255);
     --b:black;
+    --aura:primaryfont;
+    --aura-plus:secondaryfont;
 }
 @font-face {
-    font-family:aura;
+    font-family:primaryfont;
     src: url(./assets/Poppins/Poppins-Regular.ttf);
 }
 @font-face {
-    font-family:auraplus;
+    font-family:secondaryfont;
     src: url(./assets/Old_Standard_TT/OldStandardTT-Regular.ttf);
 }
 *{
@@ -25,7 +27,7 @@ body{
     background-color:var(--primary-color);
     justify-content:space-around;
     height:10dvh;
-    font-family:aura;
+    font-family:var(--aura);
 
 }
 .container img{
@@ -43,7 +45,7 @@ body{
 #search{
     width:25dvh;
     padding:5px;
-    font-family:aura;
+    font-family:var(--aura);
     padding-left:22px !important;
     background-image:url(./assets/search-icon.svg);
     background-repeat: no-repeat;
@@ -55,7 +57,7 @@ body{
 }
 #login{
     padding:7px 35px;
-    font-family:aura;
+    font-family:var(--aura);
     width:25dvh;
     font-size:15px;
     border-radius:5px;
@@ -94,7 +96,7 @@ body{
     color:var(--primary-color);
 }
 #main{
-    font-family:aura;
+    font-family:var(--aura);
     color:var(--primary-color);
     font-size:4rem;
     margin-top:80px;
@@ -106,7 +108,7 @@ body{
     font-size:20px;
     margin-top:80px;
     margin-left:120px;
-    font-family:auraplus;
+    font-family:var(--aura-plus);
     margin-top:0;
 }
 #herosection{
@@ -135,7 +137,7 @@ body{
     border:none;
     background-color:var(--primary-color);
     cursor: pointer;
-    font-family:aura;
+    font-family:var(--aura);
     color:rgb(59, 56, 56);
     font-size: medium;
 }
@@ -152,7 +154,7 @@ body{
     padding-left:22px;
     margin-left:18px;
     margin-right:8px;
-    font-family:aura;
+    font-family:var(--aura);
     border-radius:5px;
     border:none;
     background-color:rgb(244, 242, 242);
@@ -164,7 +166,7 @@ body{
 #find{
     width:18dvh;
     padding:14px;
-    font-family:aura;
+    font-family:var(--aura);
     border-radius:5px;
     background-color:rgb(255, 96, 96);
     border:none;
