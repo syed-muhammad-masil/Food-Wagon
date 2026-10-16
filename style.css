@@ -21,14 +21,15 @@
 
 body{
     background-color:var(--secondary-color);
+    overflow-y: hidden; 
 }
 .container{
     display:flex;
     background-color:var(--primary-color);
     justify-content:space-around;
+    align-items: center;
     height:10dvh;
     font-family:var(--aura);
-
 }
 .container img{
     height: 10dvh;
@@ -46,7 +47,7 @@ body{
     width:25dvh;
     padding:5px;
     font-family:var(--aura);
-    padding-left:22px !important;
+    padding-left:25px !important;
     background-image:url(./assets/search-icon.svg);
     background-repeat: no-repeat;
     background-position:8px center;
@@ -121,7 +122,8 @@ body{
 }
 #noodle{
     width:450px;
-}
+    filter: drop-shadow(0px 15px 25px rgba(255, 255, 255, 0.9));
+}   
 #card{
     background-color:var(--primary-color);
     border-radius:10px;
@@ -151,7 +153,7 @@ body{
 #menusearch{
     width:64dvh;
     padding:8px;
-    padding-left:22px;
+    padding-left:25px;
     margin-left:18px;
     margin-right:8px;
     font-family:var(--aura);
@@ -161,7 +163,7 @@ body{
     background-image:url(./assets/location-icon.svg);
     background-repeat: no-repeat;
     background-position:8px center;
-    background-size:15px;
+    background-size:16px;
 }
 #find{
     width:18dvh;
