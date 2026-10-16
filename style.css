@@ -174,7 +174,7 @@ body{
     cursor:pointer;
 }
 #hr{
-    colo:rgb(234, 228, 228);
+    color:rgb(234, 228, 228);
 }
 #find:hover{
     transition: all 0.5s ease;
