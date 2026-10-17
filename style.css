@@ -99,7 +99,7 @@ body{
 #main{
     font-family:var(--aura);
     color:var(--primary-color);
-    font-size:4rem;
+    font-size:5rem;
     margin-top:80px;
     margin-left:120px;
     margin-bottom:0;
@@ -176,9 +176,6 @@ body{
     color:var(--primary-color);
     cursor:pointer;
     margin-right:16px;
-}
-#hr{
-    color:rgb(234, 228, 228);
 }
 #find:hover{
     transition: all 0.5s ease;
